@@ -1,4 +1,4 @@
-module github.com/doomers/mrsool-protos
+module github.com/mrsool/mrsool-protos
 
 go 1.21
 
