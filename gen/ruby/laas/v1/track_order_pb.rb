@@ -5,14 +5,16 @@
 require 'google/protobuf'
 
 
-descriptor_data = "\n\x19laas/v1/track_order.proto\x12\x0bmrsool.laas\"K\n\x1aGenerateTrackingUrlRequest\x12\x19\n\x08order_id\x18\x01 \x01(\tR\x07orderId\x12\x12\n\x04lang\x18\x02 \x01(\tR\x04lang\"/\n\x1bGenerateTrackingUrlResponse\x12\x10\n\x03url\x18\x01 \x01(\tR\x03url2x\n\nTrackOrder\x12j\n\x13GenerateTrackingUrl\x12\'.mrsool.laas.GenerateTrackingUrlRequest\x1a(.mrsool.laas.GenerateTrackingUrlResponse\"\x00\x42\x98\x01\n\x0f\x63om.mrsool.laasB\x0fTrackOrderProtoP\x01Z\'github.com/mrsool/protos/gen/go/laas/v1\xa2\x02\x03MLX\xaa\x02\x0bMrsool.Laas\xca\x02\x0bMrsool\\Laas\xe2\x02\x17Mrsool\\Laas\\GPBMetadata\xea\x02\x0cMrsool::Laasb\x06proto3"
+descriptor_data = "\n\x19laas/v1/track_order.proto\x12\x0emrsool.laas.v1\"K\n\x1aGenerateTrackingUrlRequest\x12\x19\n\x08order_id\x18\x01 \x01(\tR\x07orderId\x12\x12\n\x04lang\x18\x02 \x01(\tR\x04lang\"/\n\x1bGenerateTrackingUrlResponse\x12\x10\n\x03url\x18\x01 \x01(\tR\x03url2~\n\nTrackOrder\x12p\n\x13GenerateTrackingUrl\x12*.mrsool.laas.v1.GenerateTrackingUrlRequest\x1a+.mrsool.laas.v1.GenerateTrackingUrlResponse\"\x00\x42\xaf\x01\n\x12\x63om.mrsool.laas.v1B\x0fTrackOrderProtoP\x01Z.github.com/mrsool/protos/gen/go/laas/v1;laasv1\xa2\x02\x03MLX\xaa\x02\x0eMrsool.Laas.V1\xca\x02\x0eMrsool\\Laas\\V1\xe2\x02\x1aMrsool\\Laas\\V1\\GPBMetadata\xea\x02\x10Mrsool::Laas::V1b\x06proto3"
 
 pool = ::Google::Protobuf::DescriptorPool.generated_pool
 pool.add_serialized_file(descriptor_data)
 
 module Mrsool
   module Laas
-    GenerateTrackingUrlRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("mrsool.laas.GenerateTrackingUrlRequest").msgclass
-    GenerateTrackingUrlResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("mrsool.laas.GenerateTrackingUrlResponse").msgclass
+    module V1
+      GenerateTrackingUrlRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("mrsool.laas.v1.GenerateTrackingUrlRequest").msgclass
+      GenerateTrackingUrlResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("mrsool.laas.v1.GenerateTrackingUrlResponse").msgclass
+    end
   end
 end

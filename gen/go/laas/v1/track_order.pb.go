@@ -6,7 +6,7 @@
 
 // Package name in protobuf.
 
-package v1
+package laasv1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -123,16 +123,16 @@ var File_laas_v1_track_order_proto protoreflect.FileDescriptor
 
 const file_laas_v1_track_order_proto_rawDesc = "" +
 	"\n" +
-	"\x19laas/v1/track_order.proto\x12\vmrsool.laas\"K\n" +
+	"\x19laas/v1/track_order.proto\x12\x0emrsool.laas.v1\"K\n" +
 	"\x1aGenerateTrackingUrlRequest\x12\x19\n" +
 	"\border_id\x18\x01 \x01(\tR\aorderId\x12\x12\n" +
 	"\x04lang\x18\x02 \x01(\tR\x04lang\"/\n" +
 	"\x1bGenerateTrackingUrlResponse\x12\x10\n" +
-	"\x03url\x18\x01 \x01(\tR\x03url2x\n" +
+	"\x03url\x18\x01 \x01(\tR\x03url2~\n" +
 	"\n" +
-	"TrackOrder\x12j\n" +
-	"\x13GenerateTrackingUrl\x12'.mrsool.laas.GenerateTrackingUrlRequest\x1a(.mrsool.laas.GenerateTrackingUrlResponse\"\x00B\x98\x01\n" +
-	"\x0fcom.mrsool.laasB\x0fTrackOrderProtoP\x01Z'github.com/mrsool/protos/gen/go/laas/v1\xa2\x02\x03MLX\xaa\x02\vMrsool.Laas\xca\x02\vMrsool\\Laas\xe2\x02\x17Mrsool\\Laas\\GPBMetadata\xea\x02\fMrsool::Laasb\x06proto3"
+	"TrackOrder\x12p\n" +
+	"\x13GenerateTrackingUrl\x12*.mrsool.laas.v1.GenerateTrackingUrlRequest\x1a+.mrsool.laas.v1.GenerateTrackingUrlResponse\"\x00B\xaf\x01\n" +
+	"\x12com.mrsool.laas.v1B\x0fTrackOrderProtoP\x01Z.github.com/mrsool/protos/gen/go/laas/v1;laasv1\xa2\x02\x03MLX\xaa\x02\x0eMrsool.Laas.V1\xca\x02\x0eMrsool\\Laas\\V1\xe2\x02\x1aMrsool\\Laas\\V1\\GPBMetadata\xea\x02\x10Mrsool::Laas::V1b\x06proto3"
 
 var (
 	file_laas_v1_track_order_proto_rawDescOnce sync.Once
@@ -148,12 +148,12 @@ func file_laas_v1_track_order_proto_rawDescGZIP() []byte {
 
 var file_laas_v1_track_order_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_laas_v1_track_order_proto_goTypes = []any{
-	(*GenerateTrackingUrlRequest)(nil),  // 0: mrsool.laas.GenerateTrackingUrlRequest
-	(*GenerateTrackingUrlResponse)(nil), // 1: mrsool.laas.GenerateTrackingUrlResponse
+	(*GenerateTrackingUrlRequest)(nil),  // 0: mrsool.laas.v1.GenerateTrackingUrlRequest
+	(*GenerateTrackingUrlResponse)(nil), // 1: mrsool.laas.v1.GenerateTrackingUrlResponse
 }
 var file_laas_v1_track_order_proto_depIdxs = []int32{
-	0, // 0: mrsool.laas.TrackOrder.GenerateTrackingUrl:input_type -> mrsool.laas.GenerateTrackingUrlRequest
-	1, // 1: mrsool.laas.TrackOrder.GenerateTrackingUrl:output_type -> mrsool.laas.GenerateTrackingUrlResponse
+	0, // 0: mrsool.laas.v1.TrackOrder.GenerateTrackingUrl:input_type -> mrsool.laas.v1.GenerateTrackingUrlRequest
+	1, // 1: mrsool.laas.v1.TrackOrder.GenerateTrackingUrl:output_type -> mrsool.laas.v1.GenerateTrackingUrlResponse
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

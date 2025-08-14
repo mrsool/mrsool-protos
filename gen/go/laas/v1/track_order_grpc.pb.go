@@ -6,7 +6,7 @@
 
 // Package name in protobuf.
 
-package v1
+package laasv1
 
 import (
 	context "context"
@@ -21,7 +21,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	TrackOrder_GenerateTrackingUrl_FullMethodName = "/mrsool.laas.TrackOrder/GenerateTrackingUrl"
+	TrackOrder_GenerateTrackingUrl_FullMethodName = "/mrsool.laas.v1.TrackOrder/GenerateTrackingUrl"
 )
 
 // TrackOrderClient is the client API for TrackOrder service.
@@ -110,7 +110,7 @@ func _TrackOrder_GenerateTrackingUrl_Handler(srv interface{}, ctx context.Contex
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var TrackOrder_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "mrsool.laas.TrackOrder",
+	ServiceName: "mrsool.laas.v1.TrackOrder",
 	HandlerType: (*TrackOrderServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
