@@ -8,6 +8,6 @@ echo "Generating Ruby code..."
 mkdir -p gen/ruby
 
 # Generate Ruby code
-buf generate --template buf.gen.yaml --path commons --path mrsool_backend --path laas_backend --path dispatcher
+buf generate --template buf.gen.yaml --path commons --path mrsool_backend --path laas --path dispatcher
 
 echo "Ruby code generation completed successfully!"

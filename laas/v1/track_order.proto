@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// Package name in protobuf.
+package mrsool.laas;
+
+option go_package = "mrsool/laas-backend/features/track_order/proto";
+
+service TrackOrder {
+  rpc GenerateTrackingUrl (GenerateTrackingUrlRequest) returns (GenerateTrackingUrlResponse) {}
+}
+
+message GenerateTrackingUrlRequest {
+  string order_id = 1;
+  string lang = 2;
+}
+
+message GenerateTrackingUrlResponse {
+  string url = 1;
+}

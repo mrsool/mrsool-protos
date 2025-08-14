@@ -10,6 +10,7 @@ service HelloService {
 
 message SayHelloRequest {
   string name = 1;
+  string age = 2;
 }
 
 message SayHelloResponse {
